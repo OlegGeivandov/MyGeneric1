@@ -26,30 +26,10 @@ public abstract class Animal implements Comparable<Animal> {
         return Double.compare(this.weight, o.weight);
     }
 
-
-
-//    @Override
-//    public int compareTo(Animal o) {
-//        if (o.weight>this.weight) return 1;
-//        if (o.weight<this.weight) return -1;
-//        return 0;
-//    }
-//
-//        @Override
-//    public int compareTo(Animal o) {
-//        int result = this.weight - o.weight;
-//        if (result == 0) {
-//            result = this.weight.compareTo(o.weight);
-//        }
-//        return result;
-//    }
-
-//    @Override
-//    public int compareTo(Person other) {
-//        int result = this.age - other.age;
-//        if (result == 0) {
-//            result = this.name.compareTo(other.name);
-//        }
-//        return result;
-//    }
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "weight=" + weight +
+                '}';
+    }
 }

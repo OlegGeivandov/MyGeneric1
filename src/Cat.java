@@ -5,7 +5,14 @@ public class Cat extends Animal{
     }
 
     @Override
+    public String toString() {
+        return "Cat{" +
+                "weight=" + weight +
+                '}';
+    }
+
+    @Override
     void say() {
-        System.out.println("мррр-мяу");
+        System.out.println(this + ":  мррр-мяу");
     }
 }

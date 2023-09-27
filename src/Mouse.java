@@ -6,6 +6,13 @@ public class Mouse extends Animal{
 
     @Override
     void say() {
-        System.out.println("пи-пи-пи");
+        System.out.println(this + ":  пи-пи-пи");
+    }
+
+    @Override
+    public String toString() {
+        return "Mouse{" +
+                "weight=" + weight +
+                '}';
     }
 }
